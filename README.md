@@ -17,11 +17,7 @@
     - [Running the Development Server](#running-the-development-server-1)
     - [Building for Production](#building-for-production-1)
   - [Contributing](#contributing)
-<<<<<<< HEAD
-  - [License](#license)
-=======
-  
->>>>>>> 30391486c5cfa184c5147999dcbc8dca7dee64ec
+
 
 ## Introduction
 
