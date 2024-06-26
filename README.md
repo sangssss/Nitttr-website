@@ -21,7 +21,7 @@
 
 ## Introduction
 
-Welcome to the Project Name! This project is structured with a frontend powered by React and Vite, and a backend built using Node.js. Follow the instructions below to get your development environment up and running.
+Welcome to the Nitttr - Website! This project is structured with a frontend powered by React and Vite, and a backend built using Node.js. Follow the instructions below to get your development environment up and running.
 
 ## Prerequisites
 
