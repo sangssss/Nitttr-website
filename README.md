@@ -17,10 +17,14 @@
     - [Running the Development Server](#running-the-development-server-1)
     - [Building for Production](#building-for-production-1)
   - [Contributing](#contributing)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 00854957346f96c0ececb4f02a6c00d49df7d665
 
 ## Introduction
 
-Welcome to the Project Name! This project is structured with a frontend powered by React and Vite, and a backend built using Node.js. Follow the instructions below to get your development environment up and running.
+Welcome to the Nitttr - Website! This project is structured with a frontend powered by React and Vite, and a backend built using Node.js. Follow the instructions below to get your development environment up and running.
 
 ## Prerequisites
 
