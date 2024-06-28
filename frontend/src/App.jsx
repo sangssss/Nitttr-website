@@ -4,6 +4,7 @@ import { useState } from 'react'
 // import Header from './Home/Header/Header'
 import Intro from './Home/Intro/Intro'
 import Navbar from './Home/NavBar/NavBar'
+import Footer from './Home/Footer/Footer'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Intro/>
         </div>
   
+  <Footer/>
 
     </div>
     
