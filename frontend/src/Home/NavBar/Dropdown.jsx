@@ -12,7 +12,7 @@ const Dropdown = ({ title, icon, children }) => {
   return (
     <div className="dropdown__item">
       <div className="nav__link" onClick={toggleDropdown}>
-        {icon} {title} <RiArrowDownSLine className={`dropdown__arrow ${dropdownOpen ? 'rotate' : ''}`} />
+         {title}<RiArrowDownSLine className={`dropdown__arrow ${dropdownOpen ? 'rotate' : ''}`} />
       </div>
       <ul className={`dropdown__menu ${dropdownOpen ? 'show' : ''}`}>
         {children}

@@ -3,13 +3,18 @@ import './Intro.css'
 
 function Intro() {
   return (
-    <div>
+    <div className="imgApp" >
+      
+     
+
+        <img src="/images/institutionday.png" ></img>
+      
         <div className='container'>
            
-            
-            
+       
         </div>
-    </div>
+        </div>
+   
   )
 }
 
