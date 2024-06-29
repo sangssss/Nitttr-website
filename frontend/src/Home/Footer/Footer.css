@@ -20,8 +20,8 @@ ul {
 .footer-col {
     flex: 1;
     padding: 0 15px;
-    padding-right: 20px;
     margin: 20px 0;
+    position: relative;
 }
 .footer-col h2 {
     font-size: 35px;
@@ -58,16 +58,33 @@ ul {
     padding-left: 8px;
 }
 
+/* Add separator line between columns */
+.footer-col:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: aliceblue;
+}
+
 /*responsive*/
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
+    .footer-col:not(:last-child)::after {
+        display: none;
+    }
 }
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
+    }
+    .footer-col:not(:last-child)::after {
+        display: none;
     }
 }
 .footerhead {
