@@ -12,7 +12,7 @@ const Dropdown = ({ title, icon, children }) => {
   return (
     <div className={`dropdown__item ${open ? 'active' : ''}`} onClick={toggleDropdown}>
       <div className="nav__link">
-        {title} {icon}
+        {icon} {title}
       </div>
       <ul className={`dropdown__menu ${open ? 'active' : ''}`}>
         {children}
@@ -95,11 +95,11 @@ const Navbar = () => {
             </DropdownSubItem>
           </Dropdown>
 
-
           <Dropdown title="Academic & Research" icon={<RiBook2Fill />}>
             <DropdownItem title="Overview" icon={<RiUserFollowFill />} />
             <DropdownItem title="AICTE-EOAR Report" icon={<RiBuilding3Fill/>} />
             <DropdownSubItem title="Faculty & Department" icon={<RiUser5Fill/>}>
+              {/* Add subitems if necessary */}
             </DropdownSubItem>
             <DropdownItem title="Professional Development Program" icon={<RiProgress1Line/>} />
             <DropdownItem title="International Training Program" icon={<RiProgress3Line/>} />
@@ -112,7 +112,6 @@ const Navbar = () => {
             </DropdownSubItem>
           </Dropdown>
 
-
           <a href="#">Products</a>
 
           <Dropdown title="Users" icon={<RiUserLine />}>
@@ -124,9 +123,8 @@ const Navbar = () => {
           <a href="#">Contact</a>
         </div>
 
-        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-          <RiMenuLine className={`nav__burger ${menuOpen ? 'show-icon' : ''}`} />
-          <RiCloseLine className={`nav__close ${menuOpen ? 'show-icon' : ''}`} />
+        <div className="nav__toggle" onClick={toggleMenu}>
+          {menuOpen ? <RiCloseLine /> : <RiMenuLine />}
         </div>
       </nav>
     </header>
