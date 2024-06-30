@@ -1,5 +1,6 @@
 import React from 'react'
 import './Intro.css'
+import Announce from './Announce';
 
 function Intro() {
   return (
@@ -7,9 +8,10 @@ function Intro() {
       
      
 
-        <img src="/images/institutionday.png" ></img>
+        {/* <img src="/images/institutionday.png" ></img> */}
       
         <div className='container'>
+          <Announce/>
            
        
         </div>

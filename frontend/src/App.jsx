@@ -15,10 +15,12 @@ function App() {
     <div class='bg-slate-400'>
     {/* <Header/> */}
     <Navbar/>
-    {/* <div className="imgApp" style={{"position":"absolute"}}>
-        <img src="/images/institutionday.png" style={{"width":"100%", "height":"100vh", "filter" : "brightness(40%)"}}></img> */}
+    <div className="imgApp" style={{"position":"relative"}}>
+  
+        <img src="/images/institutionday.png" style={{"width":"100%", "height":"100vh", "filter" : "brightness(40%)"}}></img> 
         <Intro/>
-        {/* </div> */}
+        
+         </div>
   
   <Footer/>
 
