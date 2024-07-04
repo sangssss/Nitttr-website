@@ -16,7 +16,10 @@
 
     "react-fast-marquee": "^1.6.4",
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e958eddd315b441fe29c2cc62294d3dd355dc509
     "react-icons": "^5.2.1"
   },
   "devDependencies": {
