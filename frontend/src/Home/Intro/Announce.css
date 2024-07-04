@@ -5,13 +5,14 @@
     align-items: center;
     padding: 0.2rem 1rem;
     background-color: aliceblue;
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    z-index:1;
     
     height: 2.5rem;
     flex-grow: 1;
     /* top:-20px; */
     /* top:-100px; */
-    top:-180px;
+    /* top:-180px; */
   }
   
   .mic {
@@ -91,6 +92,8 @@
     .mic {
       height: 1.5rem;
       width: 1.5rem;
+      margin-right: 0.3rem;
+    margin-left: 0.3rem;
     }
     
     .announcement-text {

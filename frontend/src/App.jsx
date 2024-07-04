@@ -3,24 +3,22 @@ import { useState } from 'react'
 
 // import Header from './Home/Header/Header'
 import Intro from './Home/Intro/Intro'
-import Navbar from './Home/NavBar/NavBar'
+
 import Footer from './Home/Footer/Footer';
-// import './App.css';
+import Header from './Home/NavBar/Header';
+import './App.css';
 
 
 function App() {
 
 
   return (
-    <div class='bg-slate-400'>
+    <div >
     {/* <Header/> */}
-    <Navbar/>
-    <div className="imgApp" style={{"position":"relative"}}>
+    <Header/>
+    
+      <Intro />
   
-        <img src="/images/institutionday.png" style={{"width":"100%", "height":"100vh", "filter" : "brightness(40%)"}}></img> 
-        <Intro/>
-        
-         </div>
   
   <Footer/>
 

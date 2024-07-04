@@ -43,7 +43,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer >
+      <div className="footer">
       <div className="footer-container">
         <div className="row">
           <div className="footer-col">
@@ -101,6 +102,7 @@ function Footer() {
         <div className="footer-btm">
           <h4>&copy;  2024, National Institute of Technical Teachers Training and Research Chennai</h4>
         </div>
+      </div>
       </div>
     </footer>
   );

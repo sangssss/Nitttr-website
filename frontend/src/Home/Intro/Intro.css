@@ -1,17 +1,32 @@
-.container {
-  color: white;
+.imgApp {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.background-img {
   position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-image: url('/images/institutionday.png');
+  background-size: cover;
+  /* background-repeat:no-repeat; */
+  background-position: center;
+  filter: brightness(40%);
+  z-index: -1; /* Place the image behind all elements */
+}
+
+.intro-container {
+  /* color: white; */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center align the items */
   text-align: center;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  justify-content: center; /* Center content vertically */
 }
 
-.announce-wrapper {
-  width: 80%; /* Adjust width as needed */
-  margin-bottom: 20px; /* Space between announce and other content */
-}

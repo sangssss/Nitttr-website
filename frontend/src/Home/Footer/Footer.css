@@ -1,143 +1,148 @@
+/* Ensure the body and main container take at least the full height of the viewport */
+
+
+/* Base styles for the footer container */
 .footer-container {
-  position:relative;
-    max-width: 1170px;
-    margin: auto;
-    padding: 0 15px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer {
-    background-color: #272829;
-    padding: 70px 0;
-    margin-top: 80px;
-    color: #bbb;
-  }
-  
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Ensure the footer sticks to the bottom */
+.footer {
+  background-color: #272829;
+  padding: 70px 0;
+  color: #bbb;
+  margin-top: auto;
+  margin-bottom:0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col {
+  flex: 1;
+  padding: 0 15px;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.footer-col h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h2.redborder::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background-color: rgba(255,213,79,255);
+  height: 2px;
+  width: 120px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li p {
+  font-size: 16px;
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li p:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-btm {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #bbb;
+  text-align: center;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #272829;
+  background-color: #fff;
+}
+
+@media (max-width: 992px) {
   .footer-col {
-    flex: 1;
-    padding: 0 15px;
-    margin: 20px 0;
-    position: relative;
+    flex: 1 0 45%;
     text-align: center;
   }
-  
+
+  .footer-btm {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer-col h2 {
+    font-size: 24px;
+  }
+
+  .footer-col ul li p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer-col {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
   .footer-col h2 {
     font-size: 20px;
-    color: #fff;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
   }
-  
-  .footer-col h2.redborder::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-    background-color: #00009c;
-    height: 2px;
-    width: 120px;
-  }
-  
-  .footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  
+
   .footer-col ul li p {
-    font-size: 16px;
-    color: #bbb;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
+    font-size: 12px;
   }
-  
-  .footer-col ul li p:hover {
-    color: #fff;
-    padding-left: 8px;
-  }
-  
+
   .footer-btm {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #bbb;
-    text-align: center;
+    font-size: 12px;
   }
-  
-  .footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #fff;
-    transition: all 0.5s ease;
-  }
-  
-  .footer-col .social-links a:hover {
-    color: #272829;
-    background-color: #fff;
-  }
-  
-  @media (max-width: 992px) {
-    .footer-col {
-      flex: 1 0 45%;
-      text-align: center;
-    }
-    
-    .footer-btm {
-      margin-top: 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-      padding: 50px 0;
-    }
-    
-    .footer-col h2 {
-      font-size: 24px;
-    }
-  
-    .footer-col ul li p {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .footer {
-      padding: 30px 0;
-    }
-    
-    .footer-col {
-      flex: 1 0 100%;
-      text-align: center;
-    }
-    
-    .footer-col h2 {
-      font-size: 20px;
-    }
-  
-    .footer-col ul li p {
-      font-size: 12px;
-    }
-    
-    .footer-btm {
-      font-size: 12px;
-    }
-  }
-  
+}
