@@ -30,9 +30,9 @@ function Intro() {
     <div>
     <div className="imgApp">
       <div className="background-img"> </div>
-    <div className="intro-container">
+    {/* <div className="intro-container">
       <Announce />
-    </div>
+    </div> */}
     </div>
     </div>
    

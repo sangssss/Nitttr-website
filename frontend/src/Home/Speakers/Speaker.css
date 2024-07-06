@@ -1,0 +1,41 @@
+.speakerMain {
+    height: auto; /* Adjust as needed */
+    width: 100%;
+    padding-bottom:5%;
+    
+  }
+  .about_nittr{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* width: 80%; */
+    gap: 20px;
+}
+
+.about_nittr h1{
+    padding-top: 30px;
+    color: rgb(32, 32, 172);
+    font-size: 40px;
+}
+
+.about_nittr p{
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 35px;
+    font-size: 17px;
+    color: rgb(116, 115, 115);
+}
+  .speakerCards {
+    padding-top:30px;
+    display: flex;
+    flex-wrap: nowrap; /* Display cards in a single row */
+    justify-content: flex-start; /* Adjust as needed */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  .speakerCards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
